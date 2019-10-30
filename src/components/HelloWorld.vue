@@ -5,6 +5,14 @@
 </template>
 
 <script>
+import axios from 'axios';
+
+axios.get('/api/json', {
+  params: {},
+}).then((res) => {
+  console.log(res);
+});
+
 export default {
   name: 'HelloWorld',
   props: {
